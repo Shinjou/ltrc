@@ -1,0 +1,84 @@
+name: speech_app3
+
+version: 0.0.0+1
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  speech_to_text: ^6.1.1
+  flutter_tts: ^3.6.3
+  english_words: ^4.0.0
+  provider: ^6.0.0
+  intl: ^0.17.0
+  http: ^0.13.5
+  csv: 5.0.1
+  logger: ^1.1.0
+  postgres:
+  sqflite: ^2.2.7
+  path_provider: ^2.0.11
+# path version can not be changed because flutter_test depending on 1.8.2
+  path: ^1.8.2 
+  auto_size_text:
+  audioplayers:
+  flutter_sound: 9.2.13
+  animated_icon_button:
+  shared_preferences:
+  # image_picker: ^0.8.7+5
+  # I have tried: 0.15 + 0.8, 0.14+0.6 （Could not resolve 'camera' package
+  # 0.15 + 0.7 OK, but 
+  # google_ml_kit: ^0.15.0 
+  # google_mlkit_text_recognition: ^0.8.0
+  # photo_view: 
+  # image_cropper: ^4.0.1
+  # dotted_border: ^2.0.0+3  
+  # firebase_ml_vision: ^0.12.0+3 deprecated
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  moor_generator: ^4.6.0
+  build_runner: ^2.1.7  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  # csv file name (and sql file name) must be in English
+  # the image must be in the PNG format (if so, then why background.jpg?)
+  assets:
+    - assets/background.jpg
+    - assets/tick.png
+    - assets/placeholder.png
+    - assets/ltrc.db
+    - assets/圖/人物/
+    - assets/圖/動物/
+    - assets/圖/植物/
+    - assets/圖/食物/
+    - assets/圖/小倉頡/
+    - assets/mixkit-game-show-wrong-answer-buzz-950.mp3
+    
