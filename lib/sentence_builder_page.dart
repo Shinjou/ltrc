@@ -25,7 +25,7 @@ class _SentenceBuilderPageState extends State<SentenceBuilderPage> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
+    // double screenHeight = MediaQuery.of(context).size.height;
     double paddingSize = MediaQuery.of(context).padding.top * 2.0;
     double maxWordCount = 12;
     double gridSize = (screenWidth - paddingSize) / maxWordCount;
@@ -33,10 +33,10 @@ class _SentenceBuilderPageState extends State<SentenceBuilderPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sentence Builder'),
+        title: const Text('Sentence Builder'),
         actions: [
           IconButton(
-            icon: Icon(Icons.mic),
+            icon: const Icon(Icons.mic),
             onPressed: () {
               print(
                   'hello world'); // Call your function to pronounce the whole sentence here.

@@ -108,10 +108,6 @@ class DbService {
     List<Map<String, dynamic>> rows;
     print('loadCharByType called, $_database, $characterType');
 
-    if (_database == null) {
-      await initDb();
-    }
-
     if (characterType == 'all') {
       rows = await _database.query(
         'char_photo_table',

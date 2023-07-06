@@ -14,7 +14,7 @@ class _SetupPageState extends State<SetupPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Setup'),
+        title: const Text('Setup'),
       ),
       body: Center(
         child: Column(

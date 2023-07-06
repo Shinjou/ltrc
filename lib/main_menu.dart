@@ -117,7 +117,7 @@ class _MainMenuPageState extends BaseVoicePageState {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => PinZi1Page(),
+                  builder: (context) => const PinZi1Page(),
                 ),
               );
             },
@@ -136,7 +136,7 @@ class _MainMenuPageState extends BaseVoicePageState {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => PinZi2Page(),
+                  builder: (context) => const PinZi2Page(),
                 ),
               );
             },

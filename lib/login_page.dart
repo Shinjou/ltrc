@@ -157,8 +157,8 @@ class LoginPageState extends BaseVoicePageState {
 
   void _performLogin() async {
     // Get the username and password entered by the user
-    final String username = _usernameController.text.trim();
-    final String password = _passwordController.text.trim();
+    // final String username = _usernameController.text.trim();
+    // final String password = _passwordController.text.trim();
     /*
     // * comment out login checking for testing in the iPhone
     // Check if the username and password are not empty

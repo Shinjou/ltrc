@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_tts/flutter_tts.dart';
 
 class PinZi2Page extends StatefulWidget {
-  PinZi2Page({Key? key}) : super(key: key);
+  const PinZi2Page({Key? key}) : super(key: key);
 
   @override
   _PinZi2PageState createState() => _PinZi2PageState();
@@ -89,7 +89,7 @@ class _PinZi2PageState extends State<PinZi2Page> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chinese Character Learning'),
+        title: const Text('Chinese Character Learning'),
       ),
       body: Column(
         children: [
@@ -176,7 +176,7 @@ class _PinZi2PageState extends State<PinZi2Page> {
       child: GridView.builder(
         padding: EdgeInsets.all(spaceHeight),
         itemCount: options.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
         ),
         itemBuilder: (BuildContext context, int index) {
@@ -200,7 +200,7 @@ class _PinZi2PageState extends State<PinZi2Page> {
     return Container(
       width: double.infinity, // Make the bar as wide as the screen
       child: ElevatedButton(
-        child: Text('Check'),
+        child: const Text('Check'),
         onPressed: () {
           setState(() {
             isCorrect = selectedShapeComponent == shapeComponent &&
@@ -216,7 +216,7 @@ class _PinZi2PageState extends State<PinZi2Page> {
     return Container(
       width: double.infinity, // Make the bar as wide as the screen
       child: ElevatedButton(
-        child: Text('More'),
+        child: const Text('More'),
         onPressed: () {
           // Implement more logic.
           // This would involve showing and pronouncing phrases associated with the character.

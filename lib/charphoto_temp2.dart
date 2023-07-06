@@ -145,10 +145,10 @@ class CharPhotoPage2State extends BaseVoicePageState {
 
     Widget buildImageGrid() {
       List<String> images = [
-        currentCharacter.photoLink1 ?? 'assets/placeholder.png',
-        currentCharacter.photoLink2 ?? 'assets/placeholder.png',
-        currentCharacter.photoLink3 ?? 'assets/placeholder.png',
-        currentCharacter.photoLink4 ?? 'assets/placeholder.png',
+        currentCharacter.photoLink1,
+        currentCharacter.photoLink2,
+        currentCharacter.photoLink3,
+        currentCharacter.photoLink4,
       ];
       return GridView.builder(
         shrinkWrap: true,

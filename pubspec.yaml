@@ -75,10 +75,10 @@ flutter:
     - assets/tick.png
     - assets/placeholder.png
     - assets/ltrc.db
-    - assets/圖/人物/
-    - assets/圖/動物/
-    - assets/圖/植物/
-    - assets/圖/食物/
-    - assets/圖/小倉頡/
+    - assets/img/人物/
+    - assets/img/動物/
+    - assets/img/植物/
+    - assets/img/食物/
+    - assets/img/小倉頡/
     - assets/mixkit-game-show-wrong-answer-buzz-950.mp3
     
